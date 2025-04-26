@@ -445,3 +445,21 @@ components:
           type: string
         quantidade:
           type: integer
+
+    ErroDTO:
+      type: object
+      properties:
+        erros:
+          type: array
+          items:
+            type: object
+            properties:
+              codigo:
+                type: integer
+              mensagem:
+                type: string
+              detalhes:
+                type: string
+              timestamp:
+                type: string
+                format: date-time
